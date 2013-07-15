@@ -9,12 +9,21 @@
         <version>0.1</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
+
+    <properties>
+        <platform.version>
+            4.1.1.4
+        </platform.version>
+    </properties>
+
     <artifactId>pageddragdropgrid-examples</artifactId>
     <packaging>apk</packaging>
     <dependencies>
         <dependency>
-            <groupId>android</groupId>
+            <groupId>com.google.android</groupId>
             <artifactId>android</artifactId>
+            <version>${platform.version}</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
@@ -35,6 +44,7 @@
             <plugin>
                 <groupId>com.jayway.maven.plugins.android.generation2</groupId>
                 <artifactId>android-maven-plugin</artifactId>
+                <version>3.6.0</version>
                 <extensions>true</extensions>
             </plugin>
         </plugins>
